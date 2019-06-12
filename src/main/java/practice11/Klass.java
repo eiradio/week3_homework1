@@ -39,7 +39,7 @@ public class Klass {
     public void assignLeader(Student student){
         if (member.contains(student)) {
             this.leader = student;
-            notifyTeachers(String.format("%s become Leader of %s", student.getName(), getDisplayName()));
+            notifyTeachers(String.format("%s become Leader of %s.", student.getName(), getDisplayName()));
         }
         else {
             System.out.print("It is not one of us.\n");
@@ -48,7 +48,7 @@ public class Klass {
 
     public void appendMember(Student student){
         member.add(student);
-        notifyTeachers(String.format("%s has joined %s", student.getName(), getDisplayName()));
+        notifyTeachers(String.format("%s has joined %s.", student.getName(), getDisplayName()));
     }
 
     public void notifyTeachers(String message){
