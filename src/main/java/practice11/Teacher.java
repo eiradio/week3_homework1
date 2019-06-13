@@ -48,7 +48,7 @@ public class Teacher extends Person {
     }
 
     public void getMessage(String message){
-        System.out.print(String.format("I am %s. I know %s", name, message));
+        System.out.print(String.format("I am %s. I know %s\n", name, message));
     }
 
 
